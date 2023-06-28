@@ -1,0 +1,224 @@
+body{
+  background-color: #f5f8fa;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  background-color: white;
+  
+}
+
+
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr; /* Coloca los elementos en una fila */
+  gap: 5px; /* Espacio entre los elementos */
+  justify-items: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  background-color: #48C9B0;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none; /* Quítale el contorno a la etiqueta del interruptor */
+}
+
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+#toggle-switch[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+
+input[type="checkbox"]:checked + .toggle-label:before {
+  transform: translateX(35px);
+}
+
+.icon_menu,
+.icon_billete,
+.icon_ciclo {
+  width: 25px;
+  height: 25px;
+  
+}
+
+.icons p {
+  margin-right: 40px; /* Agrega un margen de 70px a la derecha */
+}
+
+
+/*CONTENT*/
+
+content{
+  font-size: 1em;
+  background-color: white;
+}
+
+
+.proc_entrega{
+  display: none;
+  background-color: white;
+  height: 55px;
+}
+
+
+.proc_entrega img{
+  width: 300px;
+  height: 55px;
+}
+
+
+.dirigete{
+  opacity: 0.7;
+}
+
+
+.inf_usuario{
+  background-color: white;
+  
+}
+
+.inf_usuario img{
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+
+.inf_usuario p,h2{
+  opacity: 0.8;
+}
+
+.inf_usuario .nombre{
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+
+
+.nombre h2{
+  opacity: 0.8;
+  color: black;
+  padding-left: 10px;
+}
+
+
+.maps img{
+  width: 300px;
+  height: 60px;
+  margin-left: 30px;
+}
+
+
+.dir_mapa img{
+  width: 350px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+
+.dir_casa img{
+  width: 30px;
+  height: 30px;
+  
+}
+
+
+
+#mapa{
+  opacity: 0.7;
+}
+
+
+
+
+.chat img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top:-40px;
+  padding: 10px;
+  right: 30px;
+  transform: scaleX(-1);
+  background-color: #344361;
+  border-radius: 30px;
+ 
+  
+
+}
+
+.slider-container{
+  background-color: white;
+  margin-top: 20px;
+}
+
+.slider-container span{
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  opacity: 0.4;
+}
+
+
+
+.slider-container p{
+  display: none;
+}
+
+
+.slider {
+  width: 90%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 50px;
+  background: #e9eff6;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 54px;
+  height: 50px;
+  background: #1fd8b6;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#sliderValue {
+  display: none;
+}
+
+
